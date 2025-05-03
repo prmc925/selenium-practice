@@ -3,8 +3,6 @@ package browsertesting;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
 /**
  * Created by Jay Vaghani
  */
@@ -20,7 +18,7 @@ public class BaseTest {
         //Maximise the browser window
         driver.manage().window().maximize();
         //We give implicit wait to driver
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
     public void closeBrowser(){
